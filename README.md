@@ -1,7 +1,9 @@
 # Emotion Detection from Tweets BY BERT
 
-Project Overview
+A deep learning project that performs sentiment analysis on tweets using the BERT (Bidirectional Encoder Representations from Transformers) model. This project classifies tweets into 6 different emotions: sadness, joy, love, anger, fear, and surprise.
 
-Social media users express a variety of emotions in short messages. Accurately detecting these emotions enables applications in customer support, mental health monitoring, and more. In this project, we fine-tune a BERT-based model (bert-base-uncased) to classify tweets into one of six emotions: sadness, joy, love, anger, fear, and surprise.
+## Overview
+
+This project uses the BERT model to perform multi-class sentiment analysis on tweets. The model is fine-tuned on the DAIR-AI emotion dataset to classify tweets into six different emotional categories. The implementation uses the Hugging Face `transformers` library and PyTorch.
 
 
