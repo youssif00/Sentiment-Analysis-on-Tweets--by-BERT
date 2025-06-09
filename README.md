@@ -53,4 +53,45 @@ cd Sentiment-Analysis-on-Tweets--by-BERT
 ```bash
 pip install transformers datasets pandas seaborn matplotlib wordcloud scikit-learn torch
 ```
+## Usage
+
+1. Open the Jupyter notebook `project_bert_we.ipynb`
+2. Run the cells sequentially to:
+   - Load and preprocess the data
+   - Visualize emotion distribution
+   - Fine-tune the BERT model
+   - Train and evaluate the model
+
+## Model Architecture
+
+The project uses the `bert-base-uncased` model from Hugging Face's transformers library with:
+- 12 transformer layers
+- Hidden size of 768
+- 12 attention heads
+- Fine-tuned classification head for 6 emotion classes
+## Training
+
+The model is trained with the following configuration:
+- Number of epochs: 3
+- Batch size: 16 (effective batch size 32 with gradient accumulation)
+- Mixed precision training (FP16)
+- AdamW optimizer
+- Learning rate scheduler
+
+## Results
+
+The model achieves high accuracy in classifying emotions from tweets. Detailed performance metrics and visualizations can be found in the notebook.
+## License
+
+[Include license information here]
+
+## Contributors
+
+- [youssif00](https://github.com/youssif00)
+
+## Acknowledgments
+
+- Hugging Face for the transformers library
+- DAIR-AI for the emotion dataset
+- The BERT team at Google Research
 
